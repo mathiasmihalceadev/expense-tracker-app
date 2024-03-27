@@ -1,0 +1,9 @@
+.chevron-up {
+    transform: rotate(-90deg);
+    transition: transform 0.3s;
+}
+
+.chevron-down {
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+}
