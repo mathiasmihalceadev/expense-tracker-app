@@ -10,7 +10,7 @@ import entertainmentIcon from '../assets/entertainment.png';
 function ExpensesItem({item}) {
     let iconSrc;
     switch (item.category) {
-        case 'car':
+        case 'transportation':
             iconSrc = carIcon;
             break;
         case 'food':
