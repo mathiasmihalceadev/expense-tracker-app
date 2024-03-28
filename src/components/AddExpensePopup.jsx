@@ -124,16 +124,17 @@ function AddExpensePopup({closeModal}) {
                 transition={{duration: 0.4}}
             >
                 <div className="flex justify-end mt-4">
-                    <div className="p-2 rounded-full bg-gray-100">
+                    <div className="p-2 rounded-full">
                         <img onClick={closeModal} className="w-7 cursor-pointer" src={closeIcon} alt=""/>
                     </div>
                 </div>
-                <h2 className="text-2xl font-bold">Add new expense</h2>
-                <p className="mb-6 text-gray-500 font-medium">Enter the details of your expense to help you track your
+                <h2 className="text-2xl font-semibold mb-1">Add new expense</h2>
+                <p className="mb-6 text-gray-500 leading-5 text-sm">Enter the details of your expense to help you track
+                    your
                     spending.</p>
                 <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
                     <div className="flex flex-col gap-2">
-                        <label htmlFor="expense-amount" className="font-bold">
+                        <label htmlFor="expense-amount" className="font-semibold">
                             Enter amount
                         </label>
                         <div className="relative">
@@ -145,11 +146,11 @@ function AddExpensePopup({closeModal}) {
                                 onChange={handleInputChange}
                                 className="h-12 w-full rounded-xl pl-4 font-medium focus:outline-blue-500 bg-gray-100"
                             />
-                            <p className="absolute top-3 right-4 font-bold">LEI</p>
+                            <p className="absolute top-3 right-4 font-semibold">LEI</p>
                         </div>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <label htmlFor="expense-description" className="font-bold">
+                        <label htmlFor="expense-description" className="font-semibold">
                             Description
                         </label>
                         <input
@@ -162,7 +163,7 @@ function AddExpensePopup({closeModal}) {
                         />
                     </div>
                     <div className="flex flex-col gap-2" onClick={toggleIsCategoryPopup}>
-                        <label htmlFor="expense-category" className="font-bold">
+                        <label htmlFor="expense-category" className="font-semibold">
                             Category
                         </label>
                         <div className="relative">
@@ -173,7 +174,7 @@ function AddExpensePopup({closeModal}) {
                                 value={data.category}
                                 onChange={handleInputChange}
                                 readOnly={true}
-                                className="h-12 w-full rounded-xl pl-12 font-semibold focus:outline-blue-500 bg-gray-100"
+                                className="h-12 w-full rounded-xl pl-12 font-medium focus:outline-blue-500 bg-gray-100"
                             />
                             <img
                                 alt="chevron-icon"
@@ -186,7 +187,7 @@ function AddExpensePopup({closeModal}) {
                     </div>
                     <button
                         type="submit"
-                        className="text-gray-50 font-semibold bg-gradient-to-br from-gray-950 to-gray-800 py-4 rounded-xl"
+                        className="text-gray-50 font-semibold bg-gradient-to-br from-gray-950 to-gray-700 py-4 rounded-xl"
                     >
                         Add expense
                     </button>

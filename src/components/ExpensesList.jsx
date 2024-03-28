@@ -25,12 +25,12 @@ function ExpensesList({onSumChange}) {
     }, [data, onSumChange]);
 
     return (
-        <div className="mt-6 mb-4">
-            <p className="font-bold mb-3">Today, {expensesDate}</p>
+        <div className="mt-6">
+            <p className="font-semibold mb-3">Today, {expensesDate}</p>
             {parsedData.length === 0 ? (
                 <p>No expenses yet.</p>
             ) : (
-                <div>
+                <div className="overflow-y-scroll h-[340px]">
                     {parsedData.reverse().map(item => (
                         <ExpensesItem key={item.id} item={item}/>
                     ))}

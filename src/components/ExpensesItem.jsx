@@ -43,10 +43,10 @@ function ExpensesItem({item}) {
                 <img className="w-10" src={iconSrc} alt=""/>
             </div>
             <div className="flex flex-col">
-                <p className="font-bold">{item.description}</p>
-                <p className="text-sm text-gray-500 font-medium">{item.time}</p>
+                <p className="font-semibold">{item.description}</p>
+                <p className="text-xs text-gray-500 font">{item.time}</p>
             </div>
-            <div className="ml-auto font-bold">
+            <div className="ml-auto font-semibold">
                 <p>{item.amount} LEI</p>
             </div>
         </div>

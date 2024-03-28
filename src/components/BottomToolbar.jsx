@@ -7,7 +7,7 @@ function bottomToolbar({onModalToggle}) {
         <div className="fixed bottom-0 left-0 w-full">
             <div onClick={onModalToggle} className="flex justify-center mb-[-36px]">
                 <div
-                    className="bg-gradient-to-br from-gray-950 to-gray-800 p-5 rounded-full shadow-lg inline-flex cursor-pointer">
+                    className="bg-gradient-to-br from-gray-950 to-gray-700 p-5 rounded-full shadow-lg inline-flex cursor-pointer">
                     <img className="w-7" src={plusIcon} alt=""/>
                 </div>
             </div>
